@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <br>
+    <div>
+        <div class="jumbotron">
+            <h1 class="display-3">Bienvenue sur Business card manager</h1>
+            <p class="lead">This is a simple application, allow the user to save the business cards in a library.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="{{ path('card_create')}}" role="button">Create a new contact</a>
+            </p>
+        </div>
+    </div>
+
+{% endblock %}

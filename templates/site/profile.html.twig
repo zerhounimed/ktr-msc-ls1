@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Profile {% endblock %}
+
+{% block body %}
+    <section>
+            <profile>
+
+                <br>
+                <div class="jumbotron">
+                    <div class="card text-white bg-secondary mb-3 " style="max-width: 20rem; align-content:center">
+                        <div class="card-header">My profile :  {{ profile.name }}</div>
+                        <div class="card-body">
+                            <p class="card-title">My company : {{ profile.companyName }}</p>
+                            <p class="card-text">My Email : {{ profile.email }}</p>
+                            <p class="card-text">My Phone : {{ profile.telephone }}</p>
+                        </div>
+                    </div>
+                </div>
+            </profile>
+
+
+    </section>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Library {% endblock %}
+
+{% block body %}
+<section class="cards">
+    {% for card in cards %}
+    <card>
+
+            <div class="jumbotron">
+                <div class="card text-white bg-secondary mb-3 " style="max-width: 20rem; align-content:center">
+                    <div class="card-header">Card N° {{ card.id }}</div>
+                    <div class="card-body">
+                        <h4 class="card-title">{{ card.name }}</h4>
+                        <p class="card-text">Email: {{ card.email }}</p>
+                        <p class="card-text">Phone: {{ card.telephone }}</p>
+                    </div>
+            </div>
+        </div>
+    </card>
+    {% endfor %}
+
+
+</section>
+
+{% endblock %}
